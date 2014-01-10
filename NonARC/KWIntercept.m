@@ -32,7 +32,7 @@ IMP KWRegularForwardingImplementation(void) {
 }
 
 IMP KWStretForwardingImplementation(void) {
-    return class_getMethodImplementation_stret([NSObject class], @selector(KWNonExistantSelector));
+    return class_getMethodImplementation([NSObject class], @selector(KWNonExistantSelector));
 }
 
 #pragma clang diagnostic pop
